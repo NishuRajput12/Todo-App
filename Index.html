@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="Styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="todo-container">
+      <h2 class="text-center mb-4">To-Do List</h2>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="todoInput" placeholder="Add new item">
+        <div class="input-group-append">
+          <button class="btn btn-primary" id="addBtn">Add</button>
+        </div>
+      </div>
+
+      <div id="filterBtns" class="mb-4 text-center">
+        <button class="btn btn-secondary mx-2" id="filterAll">All</button>
+        <button class="btn btn-warning mx-2" id="filterPending" style="color: white;">Pending</button>
+        <button class="btn btn-success mx-2" id="filterCompleted">Completed</button>
+      </div>
+      <ul id="todoList" class="list-group">
+
+      </ul>
+    </div>
+  </div>
+  <footer class="text-center py-3 mt-auto">
+    <p>&copy; 2025 Nishu Rajput || All rights reserved</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <script src="Script.js"></script>
+</body>
+
+</html>
